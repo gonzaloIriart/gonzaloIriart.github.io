@@ -101,6 +101,10 @@ header a:hover {
   font-size: 20px;
 }
 
+.social {
+  width: 32px;
+}
+
 /* Boxes */
 #boxes {
   margin-top: 20px;
@@ -114,7 +118,8 @@ header a:hover {
 }
 
 #boxes .box img {
-  width: 90px;
+  min-width: 90px;
+  height: 90px;
 }
 
 /* Sidebar */
@@ -290,6 +295,7 @@ footer {
   header nav,
   header nav li,
   #boxes .box,
+  .container .cards,
   article#main-col,
   aside#sidebar {
     float: none;
@@ -315,7 +321,7 @@ footer {
     height: calc(100vh - 100px);
   }
 
-  #home #boxes {
+  #home #boxes,.container  {
     display: block;
   }
 
