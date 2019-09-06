@@ -166,19 +166,9 @@ article#main-col {
 	pointer-events: none;	
 }
 
-.container .cards:nth-child(1),
-.container .cards:nth-child(1) .overlay {
-	background: linear-gradient(45deg,#3503ad,#f7308c);
-}
-
-.container .cards:nth-child(2),
-.container .cards:nth-child(2) .overlay  {
-	background: linear-gradient(45deg,#ccff00,#09afff);
-}
-
-.container .cards:nth-child(3),
-.container .cards:nth-child(3) .overlay  {
-	background: linear-gradient(45deg,#e91e63,#ffeb3b);
+.container .cards,
+.container .cards:nth-child(n) .overlay {
+	background: linear-gradient(45deg,#d53369,#cbad6d);
 }
 
 .container .cards .imgBx {
@@ -202,51 +192,11 @@ article#main-col {
 	text-transform: uppercase;	
 }
 
-.container .cards .overlay {
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
-	width: 50px;
-	height: 50px;
-	background: #fff;
-	box-shadow: 0 2px 5px rgba(0,0,0,.2);
-	cursor: pointer;
-	border-radius: 50%;
-	transition: 0.5s
+
+button {
+  margin-top: 90%;
 }
 
-.container .cards .overlay:hover {
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	box-shadow: none;
-	opacity: 0.9;
-	border-radius: 0;
-}
-
-.container .cards .overlay:before {
-	content: 'Read';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	color: #fff;
-	font-size: 12px;
-	text-transform: uppercase;
-	font-weight: 500;
-	letter-spacing: 1px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition-delay: 0.5s;
-}
-
-.container .cards .overlay:hover:before {
-	display: none;
-	transition-delay: 0s;
-}
 
 .container .cards .content {
 	padding: 20px;
@@ -257,13 +207,6 @@ article#main-col {
 	visibility: hidden;
 	transition: 0s;
 	color: #fff;
-}
-
-.container .cards .overlay:hover ~ .content{
-	opacity: 1;
-	visibility: visible;
-	transition: 0.2s;
-	transition-delay: 0.5s;
 }
 
 .container .cards .content h2{
