@@ -5,6 +5,11 @@ body {
   background-color: #f4f4f4;
 }
 
+h2 {
+  text-align: center;
+  font-size: 36px
+}
+
 /* Global */
 .container {
   width: 80%;
@@ -102,7 +107,7 @@ header a:hover {
 }
 
 .social {
-  width: 32px;
+  width: 64px;
 }
 
 /* Boxes */
@@ -145,13 +150,13 @@ article#main-col {
 
 
 .container .cards {
-	position: relative;
-	width: 300px;
-	height: 400px;
-	background: #000;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 
 .container .cards:before {
@@ -159,11 +164,8 @@ article#main-col {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 50%;
-	height: 100%;
-	background: rgba(255,255,256,.1);
-	z-index: 20;
-	pointer-events: none;	
+	background: rgba(255,255,255,.1);	
+	pointer-events: none;
 }
 
 .container .cards,
@@ -177,41 +179,38 @@ article#main-col {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	display: flex;
+  display: flex;
+  flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
 
-.container .cards .imgBx h2 {
+.container .cards .imgBx h2, p{
 	margin: 10px 0 0;
 	padding: 0;
 	color: #fff;
 	font-weight:700;
 	letter-spacing: 2px;
-	text-transform: uppercase;	
 }
 
-
-button {
-  margin-top: 90%;
+.buttons{
+  position: absolute;
+  bottom: 25px;  
 }
 
-
-.container .cards .content {
-	padding: 20px;
-	box-sizing: border-box;
-	z-index: 1;
-	pointer-events: none;
-	opacity: 0;
-	visibility: hidden;
-	transition: 0s;
-	color: #fff;
-}
-
-.container .cards .content h2{
-	margin: 0;
-	padding: 0;
+button{
+  border: none;
+  text-decoration: none;
+  margin: 25px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  cursor: pointer;
 }
 
 /* Services */
@@ -229,6 +228,10 @@ footer {
   color: #ffffff;
   background-color: #e8491d;
   text-align: center;
+}
+
+footer .social {
+  width: 32px;
 }
 
 /* Media Queries */
